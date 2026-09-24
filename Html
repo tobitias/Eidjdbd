@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CanchaYa | Alquiler de canchas</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="container navbar-content">
+
+            <a href="#" class="navbar-logo">
+                ⚽ CanchaYa
+            </a>
+
+            <nav class="navbar-menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#canchas">Canchas</a>
+                <a href="#reservas">Mis reservas</a>
+            </nav>
+
+            <button class="btn btn-secondary">
+                Iniciar sesión
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <span class="hero-tag">RESERVÁ TU CANCHA</span>
+
+                    <h1>
+                        Encontrá la cancha
+                        <span>perfecta para jugar</span>
+                    </h1>
+
+                    <p>
+                        Buscá canchas de fútbol cerca tuyo,
+                        elegí el horario que más te convenga
+                        y reservá de manera rápida y sencilla.
+                    </p>
+
+                    <button class="btn btn-primary">
+                        Buscar cancha
+                    </button>
+                </div>
+
+                <div class="hero-card">
+                    <div class="hero-card-icon">⚽</div>
+
+                    <h3>¿Listo para jugar?</h3>
+
+                    <p>
+                        Elegí una cancha y reservá tu próximo partido.
+                    </p>
+
+                    <div class="hero-info">
+                        <span>🏟️ Fútbol 5</span>
+                        <span>📍 Cerca tuyo</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- BÚSQUEDA -->
+        <section class="search-section">
+            <div class="container">
+
+                <div class="search-box">
+
+                    <div class="input-group">
+                        <label for="ubicacion">Ubicación</label>
+                        <input
+                            type="text"
+                            id="ubicacion"
+                            placeholder="Ej: Berazategui"
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label for="fecha">Fecha</label>
+                        <input
+                            type="date"
+                            id="fecha"
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label for="tipo">Tipo de cancha</label>
+
+                        <select id="tipo">
+                            <option value="">Todas</option>
+                            <option value="futbol5">Fútbol 5</option>
+                            <option value="futbol7">Fútbol 7</option>
+                            <option value="futbol11">Fútbol 11</option>
+                        </select>
+                    </div>
+
+                    <button class="btn btn-primary">
+                        Buscar
+                    </button>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CANCHAS -->
+        <section id="canchas" class="courts-section">
+            <div class="container">
+
+                <div class="section-header">
+                    <div>
+                        <span class="section-tag">NUESTRAS CANCHAS</span>
+
+                        <h2>
+                            Canchas disponibles
+                        </h2>
+                    </div>
+
+                    <a href="#" class="view-all">
+                        Ver todas →
+                    </a>
+                </div>
+
+
+                <div class="court-grid">
+
+                    <!-- CARD 1 -->
+                    <article class="card card-court">
+
+                        <div class="card-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&fit=crop&w=800&q=80"
+                                alt="Cancha de fútbol"
+                            >
+
+                            <span class="card-badge">
+                                Disponible
+                            </span>
+                        </div>
+
+                        <div class="card-content">
+
+                            <div class="card-top">
+                                <div>
+                                    <h3>Cancha El Gol</h3>
+                                    <p class="court-location">
+                                        📍 Berazategui
+                                    </p>
+                                </div>
+
+                                <span class="court-type">
+                                    Fútbol 5
+                                </span>
+                            </div>
+
+                            <div class="card-details">
+                                <span>🌙 Iluminación</span>
+                                <span>🚿 Vestuarios</span>
+                            </div>
+
+                            <div class="card-footer">
+                                <div class="price">
+                                    <strong>$15.000</strong>
+                                    <span>/ hora</span>
+                                </div>
+
+                                <button class="btn btn-primary">
+                                    Reservar
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 2 -->
+                    <article class="card card-court">
+
+                        <div class="card-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?auto=format&fit=crop&w=800&q=80"
+                                alt="Cancha de fútbol"
+                            >
+
+                            <span class="card-badge">
+                                Disponible
+                            </span>
+                        </div>
+
+                        <div class="card-content">
+
+                            <div class="card-top">
+                                <div>
+                                    <h3>La Pelota</h3>
+                                    <p class="court-location">
+                                        📍 Quilmes
+                                    </p>
+                                </div>
+
+                                <span class="court-type">
+                                    Fútbol 7
+                                </span>
+                            </div>
+
+                            <div class="card-details">
+                                <span>🌙 Iluminación</span>
+                                <span>🚿 Vestuarios</span>
+                            </div>
+
+                            <div class="card-footer">
+                                <div class="price">
+                                    <strong>$18.000</strong>
+                                    <span>/ hora</span>
+                                </div>
+
+                                <button class="btn btn-primary">
+                                    Reservar
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CARD 3 -->
+                    <article class="card card-court">
+
+                        <div class="card-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=800&q=80"
+                                alt="Cancha de fútbol"
+                            >
+
+                            <span class="card-badge">
+                                Disponible
+                            </span>
+                        </div>
+
+                        <div class="card-content">
+
+                            <div class="card-top">
+                                <div>
+                                    <h3>Golazo</h3>
+                                    <p class="court-location">
+                                        📍 Florencio Varela
+                                    </p>
+                                </div>
+
+                                <span class="court-type">
+                                    Fútbol 5
+                                </span>
+                            </div>
+
+                            <div class="card-details">
+                                <span>🌙 Iluminación</span>
+                                <span>🚿 Vestuarios</span>
+                            </div>
+
+                            <div class="card-footer">
+                                <div class="price">
+                                    <strong>$20.000</strong>
+                                    <span>/ hora</span>
+                                </div>
+
+                                <button class="btn btn-primary">
+                                    Reservar
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- RESERVA -->
+        <section id="reservas" class="reservation-section">
+            <div class="container">
+
+                <div class="reservation-box">
+
+                    <div class="reservation-text">
+                        <span class="section-tag">RESERVÁ AHORA</span>
+
+                        <h2>
+                            Organizá tu próximo partido
+                        </h2>
+
+                        <p>
+                            Elegí una cancha, seleccioná la fecha
+                            y el horario y preparate para jugar.
+                        </p>
+                    </div>
+
+                    <form class="reservation-form">
+
+                        <div class="input-group">
+                            <label for="reservation-date">
+                                Fecha
+                            </label>
+
+                            <input
+                                type="date"
+                                id="reservation-date"
+                            >
+                        </div>
+
+                        <div class="input-group">
+                            <label for="reservation-time">
+                                Horario
+                            </label>
+
+                            <select id="reservation-time">
+                                <option>18:00</option>
+                                <option>19:00</option>
+                                <option>20:00</option>
+                                <option>21:00</option>
+                                <option>22:00</option>
+                            </select>
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                        >
+                            Confirmar reserva
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <div>
+                <h3>⚽ CanchaYa</h3>
+                <p>
+                    Encontrá y reservá tu cancha de fútbol.
+                </p>
+            </div>
+
+            <p>
+                ©️ 2026 CanchaYa
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
