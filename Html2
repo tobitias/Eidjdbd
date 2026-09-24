@@ -1,0 +1,163 @@
+<!-- CONTACTO -->
+<section id="contacto" class="contacto">
+
+    <h2>Contacto</h2>
+
+    <p>¿Tenés alguna consulta sobre nuestras canchas o reservas?</p>
+
+    <form action="/contacto" method="post">
+
+        <fieldset>
+
+            <legend>Datos de contacto</legend>
+
+            <div class="campo">
+                <label for="nombre">Nombre y apellido *</label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    required
+                    minlength="3"
+                    autocomplete="name"
+                >
+
+                <p class="error">
+                    Escribí tu nombre y apellido.
+                </p>
+            </div>
+
+
+            <div class="campo">
+                <label for="email">Correo electrónico *</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                >
+
+                <p class="error">
+                    Escribí un correo electrónico válido.
+                </p>
+            </div>
+
+
+            <div class="campo">
+                <label for="telefono">Celular</label>
+
+                <small>
+                    10 números con código de área
+                </small>
+
+                <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono"
+                    pattern="[0-9]{10}"
+                    autocomplete="tel"
+                >
+
+                <p class="error">
+                    El celular debe tener 10 números.
+                </p>
+            </div>
+
+        </fieldset>
+
+
+        <fieldset>
+
+            <legend>Motivo de consulta *</legend>
+
+            <div class="opcion">
+                <input
+                    type="radio"
+                    id="reserva"
+                    name="motivo"
+                    value="reserva"
+                    required
+                >
+
+                <label for="reserva">
+                    Reserva de cancha
+                </label>
+            </div>
+
+
+            <div class="opcion">
+                <input
+                    type="radio"
+                    id="precios"
+                    name="motivo"
+                    value="precios"
+                >
+
+                <label for="precios">
+                    Consulta sobre precios
+                </label>
+            </div>
+
+
+            <div class="opcion">
+                <input
+                    type="radio"
+                    id="otro"
+                    name="motivo"
+                    value="otro"
+                >
+
+                <label for="otro">
+                    Otro
+                </label>
+            </div>
+
+        </fieldset>
+
+
+        <div class="campo">
+
+            <label for="mensaje">Mensaje *</label>
+
+            <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                required
+                minlength="10"
+                placeholder="Escribí tu consulta..."
+            ></textarea>
+
+            <p class="error">
+                Escribí tu consulta.
+            </p>
+
+        </div>
+
+
+        <div class="terminos">
+
+            <input
+                type="checkbox"
+                id="terminos"
+                name="terminos"
+                required
+            >
+
+            <label for="terminos">
+                Acepto que mis datos sean utilizados para responder mi consulta *
+            </label>
+
+        </div>
+
+
+        <button type="submit">
+            Enviar consulta
+        </button>
+
+    </form>
+
+</section>
