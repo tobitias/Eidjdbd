@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CanchaYa | Alquiler de canchas</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header class="navbar">
+
+        <div class="contenedor navbar-contenido">
+
+            <h2 class="logo">⚽ CanchaYa</h2>
+
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#canchas">Canchas</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <button class="btn btn-login">
+                Iniciar sesión
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- INICIO -->
+        <section id="inicio" class="inicio">
+
+            <div class="contenedor inicio-contenido">
+
+                <div class="inicio-texto">
+
+                    <p class="etiqueta">
+                        ALQUILER DE CANCHAS
+                    </p>
+
+                    <h1>
+                        Encontrá tu cancha
+                        <span>y empezá a jugar</span>
+                    </h1>
+
+                    <p class="descripcion">
+                        Elegí una cancha de fútbol, buscá el horario
+                        que más te convenga y reservá fácilmente.
+                    </p>
+
+                    <a href="#canchas" class="btn btn-principal">
+                        Buscar cancha
+                    </a>
+
+                </div>
+
+
+                <div class="inicio-info">
+
+                    <div class="pelota">
+                        ⚽
+                    </div>
+
+                    <h3>
+                        Tu próximo partido empieza acá
+                    </h3>
+
+                    <p>
+                        Encontrá canchas de fútbol cerca tuyo,
+                        con diferentes horarios y precios.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- BUSCADOR -->
+        <section class="buscador">
+
+            <div class="contenedor buscador-contenido">
+
+                <div>
+                    <label for="ubicacion">
+                        Ubicación
+                    </label>
+
+                    <input
+                        type="text"
+                        id="ubicacion"
+                        placeholder="Ej: Berazategui"
+                    >
+                </div>
+
+
+                <div>
+                    <label for="fecha">
+                        Fecha
+                    </label>
+
+                    <input
+                        type="date"
+                        id="fecha"
+                    >
+                </div>
+
+
+                <div>
+                    <label for="tipo">
+                        Tipo de cancha
+                    </label>
+
+                    <select id="tipo">
+
+                        <option>
+                            Todas
+                        </option>
+
+                        <option>
+                            Fútbol 5
+                        </option>
+
+                        <option>
+                            Fútbol 7
+                        </option>
+
+                        <option>
+                            Fútbol 11
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button class="btn btn-principal">
+                    Buscar
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- CANCHAS -->
+        <section id="canchas" class="canchas">
+
+            <div class="contenedor">
+
+                <div class="titulo-seccion">
+
+                    <div>
+
+                        <p class="etiqueta">
+                            NUESTRAS CANCHAS
+                        </p>
+
+                        <h2>
+                            Canchas disponibles
+                        </h2>
+
+                    </div>
+
+                    <a href="#">
+                        Ver todas →
+                    </a>
+
+                </div>
+
+
+                <div class="tarjetas">
+
+
+                    <!-- CANCHA 1 -->
+                    <article class="tarjeta">
+
+                        <div class="imagen-cancha cancha-1">
+
+                            <span>
+                                Disponible
+                            </span>
+
+                        </div>
+
+
+                        <div class="tarjeta-contenido">
+
+                            <div class="titulo-tarjeta">
+
+                                <div>
+
+                                    <h3>
+                                        Cancha El Gol
+                                    </h3>
+
+                                    <p>
+                                        📍 Berazategui
+                                    </p>
+
+                                </div>
+
+                                <strong>
+                                    Fútbol 5
+                                </strong>
+
+                            </div>
+
+
+                            <div class="caracteristicas">
+
+                                <span>
+                                    💡 Iluminación
+                                </span>
+
+                                <span>
+                                    🚿 Vestuarios
+                                </span>
+
+                            </div>
+
+
+                            <div class="pie-tarjeta">
+
+                                <p>
+                                    <b>$15.000</b> / hora
+                                </p>
+
+                                <button class="btn btn-principal">
+                                    Reservar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- CANCHA 2 -->
+                    <article class="tarjeta">
+
+                        <div class="imagen-cancha cancha-2">
+
+                            <span>
+                                Disponible
+                            </span>
+
+                        </div>
+
+
+                        <div class="tarjeta-contenido">
+
+                            <div class="titulo-tarjeta">
+
+                                <div>
+
+                                    <h3>
+                                        La Pelota
+                                    </h3>
+
+                                    <p>
+                                        📍 Quilmes
+                                    </p>
+
+                                </div>
+
+                                <strong>
+                                    Fútbol 7
+                                </strong>
+
+                            </div>
+
+
+                            <div class="caracteristicas">
+
+                                <span>
+                                    💡 Iluminación
+                                </span>
+
+                                <span>
+                                    🚿 Vestuarios
+                                </span>
+
+                            </div>
+
+
+                            <div class="pie-tarjeta">
+
+                                <p>
+                                    <b>$18.000</b> / hora
+                                </p>
+
+                                <button class="btn btn-principal">
+                                    Reservar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- CANCHA 3 -->
+                    <article class="tarjeta">
+
+                        <div class="imagen-cancha cancha-3">
+
+                            <span>
+                                Disponible
+                            </span>
+
+                        </div>
+
+
+                        <div class="tarjeta-contenido">
+
+                            <div class="titulo-tarjeta">
+
+                                <div>
+
+                                    <h3>
+                                        Golazo
+                                    </h3>
+
+                                    <p>
+                                        📍 Florencio Varela
+                                    </p>
+
+                                </div>
+
+                                <strong>
+                                    Fútbol 5
+                                </strong>
+
+                            </div>
+
+
+                            <div class="caracteristicas">
+
+                                <span>
+                                    💡 Iluminación
+                                </span>
+
+                                <span>
+                                    🚿 Vestuarios
+                                </span>
+
+                            </div>
+
+
+                            <div class="pie-tarjeta">
+
+                                <p>
+                                    <b>$20.000</b> / hora
+                                </p>
+
+                                <button class="btn btn-principal">
+                                    Reservar
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="contacto">
+
+            <div class="contenedor contacto-contenido">
+
+
+                <!-- INFORMACIÓN -->
+                <div class="contacto-info">
+
+                    <p class="etiqueta">
+                        CONTACTO
+                    </p>
+
+                    <h2>
+                        ¿Tenés alguna consulta?
+                    </h2>
+
+                    <p>
+                        Si tenés dudas sobre las canchas,
+                        horarios, precios o reservas,
+                        podés comunicarte con nosotros
+                        completando el formulario.
+                    </p>
+
+
+                    <div class="datos-contacto">
+
+                        <p>
+                            📍 Berazategui, Buenos Aires
+                        </p>
+
+                        <p>
+                            📞 11 1234-5678
+                        </p>
+
+                        <p>
+                            ✉️ contacto@canchaya.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FORMULARIO -->
+                <form class="formulario-contacto">
+
+
+                    <div class="fila-formulario">
+
+                        <div class="campo">
+
+                            <label for="nombre">
+                                Nombre
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nombre"
+                                placeholder="Tu nombre"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="campo">
+
+                            <label for="apellido">
+                                Apellido
+                            </label>
+
+                            <input
+                                type="text"
+                                id="apellido"
+                                placeholder="Tu apellido"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="email">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="ejemplo@gmail.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="motivo">
+                            Motivo de consulta
+                        </label>
+
+                        <select id="motivo">
+
+                            <option>
+                                Seleccioná una opción
+                            </option>
+
+                            <option>
+                                Consulta sobre una reserva
+                            </option>
+
+                            <option>
+                                Consulta sobre una cancha
+                            </option>
+
+                            <option>
+                                Consulta sobre precios
+                            </option>
+
+                            <option>
+                                Otro
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="campo">
+
+                        <label for="mensaje">
+                            Mensaje
+                        </label>
+
+                        <textarea
+                            id="mensaje"
+                            rows="5"
+                            placeholder="Escribí tu consulta..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-principal"
+                    >
+                        Enviar consulta
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="contenedor">
+
+            <h3>
+                ⚽ CanchaYa
+            </h3>
+
+            <p>
+                Alquiler y reserva de canchas de fútbol.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
