@@ -1,0 +1,151 @@
+/* CONTACTO */
+
+.contacto {
+    padding: 60px 20px;
+    background: #f5f5f5;
+}
+
+.contacto h2 {
+    margin-bottom: 10px;
+}
+
+.contacto > p {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.contacto form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contacto fieldset {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+.contacto legend {
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.campo small {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    outline: 2px solid #16a34a;
+    border-color: #16a34a;
+}
+
+
+/* Opciones del formulario */
+
+.opcion {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.opcion input {
+    width: auto;
+}
+
+
+/* Checkbox */
+
+.terminos {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.terminos input {
+    margin-top: 5px;
+}
+
+
+/* Mensajes de error */
+
+.error {
+    display: none;
+    color: #dc2626;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+
+/* Mostrar error solamente cuando el usuario interactuó */
+
+.campo input:user-invalid:not(:placeholder-shown) + .error,
+.campo textarea:user-invalid:not(:placeholder-shown) + .error {
+    display: block;
+}
+
+
+/* Botón */
+
+.contacto button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+
+    background: #16a34a;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.contacto button:hover {
+    background: #15803d;
+}
+
+
+/* Una columna en celular */
+
+@media (max-width: 600px) {
+
+    .contacto {
+        padding: 40px 15px;
+    }
+
+    .contacto form {
+        width: 100%;
+    }
+
+}
